@@ -60,8 +60,8 @@ public class LevelManager : MonoBehaviour
         GameManager.Instance.playerControler.transform.DOMove(playerPos, 1f).OnComplete(
             () =>
             {
-                GameManager.Instance.playerControler.transform.DOMove(t2PlayerPos.position, 5f);
-                GameManager.Instance.cameraController.transform.DOMove(cam2Pos.position, 5f).OnComplete(
+                GameManager.Instance.playerControler.transform.DOMove(t2PlayerPos.position, 5.5f).SetEase(Ease.Linear);
+                GameManager.Instance.cameraController.transform.DOMove(cam2Pos.position, 5.5f).SetEase(Ease.Linear).OnComplete(
                     () =>
                     {
                         GameManager.Instance.playerControler.dragStartPos.y = -999f;

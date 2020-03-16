@@ -4173,7 +4173,7 @@ MonoBehaviour:
   t2BottomLeft: {fileID: 2363659304508388701}
   t2PlayerPos: {fileID: 2363659303948908803}
   theGate: {fileID: 2363659303997246418}
-  levelScoreGoals: 1a0000003c000000
+  levelScoreGoals: 1a00000040000000
 --- !u!1 &2363659303673046011
 GameObject:
   m_ObjectHideFlags: 0

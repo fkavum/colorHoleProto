@@ -68,6 +68,7 @@ public class MenuManager : Singleton<MenuManager>
 
     public void CheckWinCondition(int goalIndex)
     {
+	    if(GameManager.Instance.gameOver) return;
 	    if (score >= scoreGoals[goalIndex])
 	    {
 		    switch (goalIndex)
